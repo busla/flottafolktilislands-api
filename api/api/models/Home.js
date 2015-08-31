@@ -6,7 +6,7 @@
 */
 
 module.exports = {
-
+  connection: 'someMongodbServer',
   attributes: {
     name: {
       type: 'string',
