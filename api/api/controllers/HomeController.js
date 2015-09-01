@@ -21,9 +21,12 @@ module.exports = {
 
         res.send(data);
       });  
-    });
+    }); 
+  },	
 
+  forbidden: function(req, res) {
     
-  }	
+    res.forbidden();
+  }   
 };
 

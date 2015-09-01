@@ -31,8 +31,19 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
+  
+  'GET /home': {    
+    controller: 'HomeController',
+    action: 'forbidden',
+    cors: false,
+  },
 
-  'GET /home/statistics': 'HomeController.statistics',
+  'GET /home/statistics': {    
+    controller: 'HomeController',
+    action: 'statistics',
+  },
+ 
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
