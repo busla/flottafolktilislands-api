@@ -1,8 +1,8 @@
 {
   "name": "flottafolktilislands",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "Donation app for Icelanders",
   "keywords": [],
   "dependencies": {
     "connect-mongo": "^0.8.2",
@@ -35,5 +35,5 @@
     "url": "git://github.com/nonni/flottafolktilislands.git"
   },
   "author": "nonni",
-  "license": ""
+  "license": "MIT"
 }
