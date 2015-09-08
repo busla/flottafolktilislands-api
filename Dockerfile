@@ -4,6 +4,7 @@ FROM ubuntu:14.04
 RUN echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
+    && apt-get install dialog \
     && apt-get install --yes curl \
     && apt-get install --yes -f build-essential \
     && curl -sL https://deb.nodesource.com/setup | sudo bash - \
