@@ -15,7 +15,7 @@ module.exports = {
   connections : {
     someMongodbServer: {
       adapter: 'sails-mongo',
-      host: 'mongodb',
+      host: 'dokku-mongo-service',
       port: 27017,
       //user: '',
       //password: '',
