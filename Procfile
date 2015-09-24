@@ -1,2 +1,2 @@
+config:set flottafolktilislands-api NODE_ENV=production
 web: sails lift
-config:set refugees-api NODE_ENV=production
