@@ -4,7 +4,9 @@
   "version": "0.0.1",
   "description": "Donation app for Icelanders",
   "keywords": [],
-  "engines": {"node": "0.12.7"},
+  "engines": {
+    "node": "v0.12.7"
+  },
   "dependencies": {
     "connect-mongo": "^0.8.2",
     "ejs": "~0.8.4",
