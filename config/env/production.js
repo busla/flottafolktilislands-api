@@ -15,7 +15,7 @@ module.exports = {
   connections : {
     someMongodbServer: {
       adapter: 'sails-mongo',
-      host: 'dokku-mongo-service',
+      host: 'lolipop',
       port: 27017,
       //user: '',
       //password: '',
@@ -25,9 +25,9 @@ module.exports = {
 
   session: {
     adapter: 'mongo',
-    host: '172.17.0.56',
+    host: 'lolipop',
     port: 27017,
-    db: 'lolipop',
+    db: 'flottafolktilislands',
     collection: 'sessions',
     //username: '',
     //password: '',
