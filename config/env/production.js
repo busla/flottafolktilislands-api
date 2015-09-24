@@ -25,9 +25,9 @@ module.exports = {
 
   session: {
     adapter: 'mongo',
-    host: 'mongodb',
+    host: '172.17.0.56',
     port: 27017,
-    db: 'flottafolktilislands',
+    db: 'lolipop',
     collection: 'sessions',
     //username: '',
     //password: '',
