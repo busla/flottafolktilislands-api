@@ -15,19 +15,19 @@ module.exports = {
   connections : {
     someMongodbServer: {
       adapter: 'sails-mongo',
-      host: 'lolipop',
-      port: 27017,
+      host: process.env.MONGO_PORT_27017_TCP_ADDR,
+      port: process.env.MONGO_PORT_27017_TCP_PORT,
       //user: '',
       //password: '',
-      database: 'flottafolktilislands'
+      database: process.env.MONGO_NAME,
     },
   },
 
   session: {
     adapter: 'mongo',
-    host: 'lolipop',
-    port: 27017,
-    db: 'flottafolktilislands',
+    host: process.env.MONGO_PORT_27017_TCP_ADDR,
+    port: process.env.MONGO_PORT_27017_TCP_PORT,
+    db: process.env.MONGO_NAME,
     collection: 'sessions',
     //username: '',
     //password: '',
