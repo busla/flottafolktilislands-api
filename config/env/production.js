@@ -19,8 +19,7 @@ module.exports = {
       //host: process.env.MONGO_PORT_27017_TCP_ADDR,
       //port: process.env.MONGO_PORT_27017_TCP_PORT,
       //db: process.env.MONGO_URL,
-      url: process.env.MONGO_URL,
-      collection: 'home',      
+      url: process.env.MONGO_URL             
     },
     
   },
@@ -34,11 +33,8 @@ module.exports = {
     // },
 
 
-      adapter: 'mongo',
-      host: process.env.MONGO_PORT_27017_TCP_ADDR,
-      port: process.env.MONGO_PORT_27017_TCP_PORT,
-      db: process.env.MONGO_URL,
-      collection: 'sessions',
+    adapter: 'sails-mongo',
+    url: process.env.MONGO_URL
 
   /***************************************************************************
   *                                                                          *
