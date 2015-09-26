@@ -25,36 +25,47 @@ module.exports = {
   },
 
   session: {
-    /*
-    localDiskDb: {
-      adapter: 'sails-disk'
-    },    
-    */
-    
-    adapter: 'sails-mongo',
-    host: process.env.MONGO_PORT_27017_TCP_ADDR,
-    port: process.env.MONGO_PORT_27017_TCP_PORT,
-    db: process.env.MONGO_URL,
-    collection: 'sessions',
-    //username: '',
-    //password: '',
+
+    secret: 'b00850bef62d5a334505ea1baf351469',
+
+    // cookie: {
+    //   maxAge: 24 * 60 * 60 * 1000
+    // },
+
+
+      adapter: 'mongo',
+      host: process.env.MONGO_PORT_27017_TCP_ADDR,
+      port: process.env.MONGO_PORT_27017_TCP_PORT,
+      db: process.env.MONGO_URL,
+      collection: 'sessions',
+
+  /***************************************************************************
+  *                                                                          *
+  * Optional Values:                                                         *
+  *                                                                          *
+  * # Note: url will override other connection settings url:                 *
+  * 'mongodb://user:pass@host:port/database/collection',                     *
+  *                                                                          *
+  ***************************************************************************/
+
+  // username: '',
+  // password: '',
   // auto_reconnect: false,
   // ssl: false,
   // stringify: true
-  
-  },
+
+  };
 
 
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
-   /*
+   
    models: {
-     //connection: 'someMongodbServer'
-     connection: 'sails-disk'
+    connection: 'someMongodbServer'     
    },
-   */
+   
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *
