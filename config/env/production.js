@@ -33,7 +33,7 @@ module.exports = {
     // },
 
 
-    adapter: 'sails-mongo',
+    adapter: 'mongo',
     url: process.env.MONGO_URL
 
   /***************************************************************************
