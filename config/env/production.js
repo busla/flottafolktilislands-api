@@ -13,38 +13,35 @@
 module.exports = {
 
   connections : {
-    localDiskDb: {
-      adapter: 'sails-disk'
-    },    
-    /*
+
     someMongodbServer: {
       adapter: 'sails-mongo',
       host: process.env.MONGO_PORT_27017_TCP_ADDR,
       port: process.env.MONGO_PORT_27017_TCP_PORT,
-      //user: '',
-      //password: '',
-      database: process.env.MONGO_NAME,
+      db: process.env.MONGO_URL,
+      collection: 'home',      
     },
-    */
+    
   },
 
   session: {
+    /*
     localDiskDb: {
       adapter: 'sails-disk'
     },    
-
-    /*
-    adapter: 'mongo',
+    */
+    
+    adapter: 'sails-mongo',
     host: process.env.MONGO_PORT_27017_TCP_ADDR,
     port: process.env.MONGO_PORT_27017_TCP_PORT,
-    db: process.env.MONGO_NAME,
+    db: process.env.MONGO_URL,
     collection: 'sessions',
     //username: '',
     //password: '',
   // auto_reconnect: false,
   // ssl: false,
   // stringify: true
-  */
+  
   },
 
 
