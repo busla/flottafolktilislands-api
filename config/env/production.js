@@ -32,7 +32,7 @@ module.exports = {
     localDiskDb: {
       adapter: 'sails-disk'
     },    
-    
+
     /*
     adapter: 'mongo',
     host: process.env.MONGO_PORT_27017_TCP_ADDR,
@@ -54,7 +54,8 @@ module.exports = {
    ***************************************************************************/
 
    models: {
-     connection: 'someMongodbServer'
+     //connection: 'someMongodbServer'
+     connection: 'sails-disk'
    },
 
   /***************************************************************************
